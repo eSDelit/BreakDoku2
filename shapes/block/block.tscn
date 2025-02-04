@@ -1,0 +1,54 @@
+[gd_scene load_steps=12 format=3 uid="uid://uofbvca3li0c"]
+
+[ext_resource type="Texture2D" uid="uid://bhn2l2qcbnv7x" path="res://shapes/block/block_16.png" id="1_ogwql"]
+[ext_resource type="Texture2D" uid="uid://vdm64vg00y56" path="res://shapes/block/block_18.png" id="2_6nhry"]
+[ext_resource type="Texture2D" uid="uid://di5b4byn0xjo0" path="res://shapes/block/block_20.png" id="3_lxu14"]
+[ext_resource type="Texture2D" uid="uid://bnpqn7dol1ncu" path="res://shapes/block/block_22.png" id="4_q1t56"]
+[ext_resource type="Texture2D" uid="uid://dcjrgnkqv8rgx" path="res://shapes/block/block_24.png" id="5_k517p"]
+[ext_resource type="Texture2D" uid="uid://bq4rtnaqem5sx" path="res://shapes/block/block_26.png" id="6_6kkw3"]
+[ext_resource type="Texture2D" uid="uid://gotkv1p30mrl" path="res://shapes/block/block_28.png" id="7_koia0"]
+[ext_resource type="Texture2D" uid="uid://dmorcyv354nkj" path="res://shapes/block/block_30.png" id="8_gwvbp"]
+[ext_resource type="Texture2D" uid="uid://dd3st7j1lyqmx" path="res://shapes/block/block_32.png" id="9_ok4ug"]
+[ext_resource type="Script" path="res://shapes/block/block.gd" id="10_qfiee"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3x7ig"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ogwql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_6nhry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_lxu14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q1t56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_k517p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6kkw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_koia0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gwvbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ok4ug")
+}],
+"loop": true,
+"name": &"default",
+"speed": 0.0
+}]
+
+[node name="Block" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_3x7ig")
+speed_scale = 0.0
+script = ExtResource("10_qfiee")
+
+[connection signal="frame_changed" from="." to="." method="_on_frame_changed"]

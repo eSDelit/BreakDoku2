@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxck6la0rx3ru"]
+
+[ext_resource type="Script" path="res://tests/test_block.gd" id="1_kxw43"]
+[ext_resource type="PackedScene" uid="uid://uofbvca3li0c" path="res://shapes/block/block.tscn" id="1_qndaq"]
+
+[node name="TestBlock" type="Node2D"]
+script = ExtResource("1_kxw43")
+
+[node name="Block" parent="." instance=ExtResource("1_qndaq")]
+position = Vector2(327, 139)
+
+[connection signal="grabbed" from="Block" to="." method="_on_block_grabbed"]
+[connection signal="released" from="Block" to="." method="_on_block_released"]

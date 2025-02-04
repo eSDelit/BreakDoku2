@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://i0mbdhku6i3g"]
+
+[ext_resource type="PackedScene" uid="uid://bnu6iyfax87ng" path="res://shapes/l_shape.tscn" id="1_gbf6d"]
+
+[node name="TestLShape" type="Node2D"]
+
+[node name="LShape" parent="." instance=ExtResource("1_gbf6d")]
+position = Vector2(378, 259)

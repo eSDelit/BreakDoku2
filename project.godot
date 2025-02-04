@@ -1,0 +1,26 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="BreakDoku2"
+config/features=PackedStringArray("4.3", "Forward Plus")
+run/max_fps=60
+config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+window/vsync/vsync_mode=0
+
+[dotnet]
+
+project/assembly_name="BreakDoku2"
