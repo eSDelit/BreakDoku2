@@ -1,6 +1,7 @@
 class_name Block
 extends AnimatedSprite2D
 
+var is_grabbed: bool
 signal grabbed(pos : Vector2, block : AnimatedSprite2D)
 signal released
 
@@ -18,10 +19,12 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT:
-			if event.is_released():
+			if event.is_released() and is_grabbed:
 				released.emit()
+				is_grabbed = false
 			elif rect.has_point(to_local(event.position)):
 				grabbed.emit(to_local(event.position), self)
+				is_grabbed = true
 
 
 func _on_frame_changed() -> void:
@@ -31,9 +34,3 @@ func _on_frame_changed() -> void:
 	var size = Vector2(frame_text_width, frame_text_height)
 	rect.size = size
 	rect.position = -(size / 2)
-
-func _draw() -> void:
-	draw_rect(rect, Color.BLUE_VIOLET)
-
-func _to_string() -> String:
-	return str(get_index()) + " " + str(rect)

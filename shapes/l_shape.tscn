@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bnu6iyfax87ng"]
 
-[ext_resource type="Script" path="res://shapes/shape.gd" id="1_surdq"]
+[ext_resource type="Script" path="res://shapes/cl_shape.gd" id="1_surdq"]
 [ext_resource type="PackedScene" uid="uid://uofbvca3li0c" path="res://shapes/block/block.tscn" id="2_suvmu"]
 
 [node name="LShape" type="Node2D"]
