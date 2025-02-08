@@ -20,6 +20,8 @@ func _on_grabbed(pos: Vector2, block: Block):
 	grabbed_at = block.position + pos
 
 func _on_released():
+	if !grabbable:
+		return
 	grabbed = false
 	released.emit(self)
 

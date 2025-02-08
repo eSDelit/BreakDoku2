@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvmtci7qj8hw"]
+
+[ext_resource type="Texture2D" uid="uid://dd3st7j1lyqmx" path="res://shapes/block/block_32.png" id="1_k42rp"]
+
+[node name="BlockSprite" type="Sprite2D"]
+texture = ExtResource("1_k42rp")
