@@ -27,4 +27,8 @@ func _on_released():
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and grabbed:
-		position = event.position - grabbed_at
+		global_position = get_global_mouse_position() - grabbed_at
+		print(global_position)
+		print(get_global_mouse_position())
+		print(grabbed_at)
+		print()
