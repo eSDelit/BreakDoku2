@@ -6,7 +6,7 @@ signal grabbed(pos : Vector2, block : AnimatedSprite2D)
 signal released
 
 var rect = Rect2()
-var grid_pos: Vector2 = Vector2(0, 0)
+var grid_pos: Vector2i = Vector2i(0, 0)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	_on_frame_changed()
@@ -22,8 +22,8 @@ func _input(event: InputEvent) -> void:
 			if event.is_released() and is_grabbed:
 				released.emit()
 				is_grabbed = false
-			elif rect.has_point(to_local(event.position)):
-				grabbed.emit(to_local(event.position), self)
+			elif rect.has_point(get_local_mouse_position()):
+				grabbed.emit(get_local_mouse_position(), self)
 				is_grabbed = true
 
 

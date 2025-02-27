@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3karlm0ixicn"]
+
+[ext_resource type="Script" path="res://shapes/cl_shape.gd" id="1_dlu08"]
+[ext_resource type="PackedScene" uid="uid://uofbvca3li0c" path="res://shapes/block/block.tscn" id="2_3af84"]
+
+[node name="QShape" type="Node2D"]
+script = ExtResource("1_dlu08")
+
+[node name="Block" parent="." instance=ExtResource("2_3af84")]
+
+[node name="Block2" parent="." instance=ExtResource("2_3af84")]
+position = Vector2(0, 16)
+
+[node name="Block4" parent="." instance=ExtResource("2_3af84")]
+position = Vector2(16, 0)
+
+[node name="Block5" parent="." instance=ExtResource("2_3af84")]
+position = Vector2(16, 16)

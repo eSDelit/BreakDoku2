@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1p7b8uhwxdxp"]
+
+[ext_resource type="Script" path="res://tests/test_multi_spawn.gd" id="1_xfc3s"]
+[ext_resource type="PackedScene" uid="uid://b5cpfdm3mcugo" path="res://board/board.tscn" id="2_dhtdn"]
+[ext_resource type="PackedScene" uid="uid://im3anugna8hl" path="res://spawn/spawn.tscn" id="3_iwn8c"]
+
+[node name="TestMultiSpawn" type="Node2D" node_paths=PackedStringArray("spawns")]
+script = ExtResource("1_xfc3s")
+spawns = [NodePath("Spawn1"), NodePath("Spawn2"), NodePath("Spawn3")]
+
+[node name="Board" parent="." instance=ExtResource("2_dhtdn")]
+position = Vector2(438, 62)
+
+[node name="Spawn1" parent="." instance=ExtResource("3_iwn8c")]
+position = Vector2(319, 460)
+
+[node name="Spawn2" parent="." instance=ExtResource("3_iwn8c")]
+position = Vector2(581, 461)
+
+[node name="Spawn3" parent="." instance=ExtResource("3_iwn8c")]
+position = Vector2(821, 458)
+
+[connection signal="scored" from="Board" to="." method="_on_board_scored"]

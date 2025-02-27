@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbqs0ts6egmmw"]
+
+[ext_resource type="Script" path="res://shapes/cl_shape.gd" id="1_c6fvg"]
+[ext_resource type="PackedScene" uid="uid://uofbvca3li0c" path="res://shapes/block/block.tscn" id="2_abrv8"]
+
+[node name="RZShape" type="Node2D"]
+script = ExtResource("1_c6fvg")
+
+[node name="Block" parent="." instance=ExtResource("2_abrv8")]
+
+[node name="Block2" parent="." instance=ExtResource("2_abrv8")]
+position = Vector2(0, 16)
+
+[node name="Block4" parent="." instance=ExtResource("2_abrv8")]
+position = Vector2(-16, 16)
+
+[node name="Block5" parent="." instance=ExtResource("2_abrv8")]
+position = Vector2(16, 0)
