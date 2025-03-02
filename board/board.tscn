@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://b5cpfdm3mcugo"]
+[gd_scene load_steps=9 format=4 uid="uid://b5cpfdm3mcugo"]
 
 [ext_resource type="Texture2D" uid="uid://b8dw2b2pdr46s" path="res://board/TileSet_Board_1.png" id="1_y6jiv"]
 [ext_resource type="Script" path="res://board/board.gd" id="2_mm2e6"]
 [ext_resource type="Texture2D" uid="uid://b8cmbs6uj7kws" path="res://board/blob.png" id="2_vkuex"]
+[ext_resource type="Script" path="res://board/block_sensor_layer/block_sensor_layer.gd" id="4_rmt3x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sxhgu"]
 texture = ExtResource("1_y6jiv")
@@ -55,133 +56,160 @@ script = ExtResource("2_mm2e6")
 visible = false
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R2" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAEAAAAAAAAAAAABAAEAAAAAAAAAAAACAAEAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAAFAAEAAAAAAAAAAAAGAAEAAAAAAAAAAAAHAAEAAAAAAAAAAAAIAAEAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R3" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAACAAIAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAIAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAIAAIAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R4" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAFAAMAAAAAAAAAAAAGAAMAAAAAAAAAAAAHAAMAAAAAAAAAAAAIAAMAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R5" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAQAAAAAAAAAAAABAAQAAAAAAAAAAAACAAQAAAAAAAAAAAADAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAAFAAQAAAAAAAAAAAAGAAQAAAAAAAAAAAAHAAQAAAAAAAAAAAAIAAQAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R6" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAUAAAAAAAAAAAABAAUAAAAAAAAAAAACAAUAAAAAAAAAAAADAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAFAAUAAAAAAAAAAAAGAAUAAAAAAAAAAAAHAAUAAAAAAAAAAAAIAAUAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R7" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAYAAAAAAAAAAAABAAYAAAAAAAAAAAACAAYAAAAAAAAAAAADAAYAAAAAAAAAAAAEAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAAHAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R8" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAcAAAAAAAAAAAABAAcAAAAAAAAAAAACAAcAAAAAAAAAAAADAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAFAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAIAAcAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="R9" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAgAAAAAAAAAAAABAAgAAAAAAAAAAAACAAgAAAAAAAAAAAADAAgAAAAAAAAAAAAEAAgAAAAAAAAAAAAFAAgAAAAAAAAAAAAGAAgAAAAAAAAAAAAHAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C1" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C2" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAABAAAAAAAAAAAAAAABAAEAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAAAAAABAAUAAAAAAAAAAAABAAYAAAAAAAAAAAABAAcAAAAAAAAAAAABAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C3" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAACAAAAAAAAAAAAAAACAAEAAAAAAAAAAAACAAIAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAACAAUAAAAAAAAAAAACAAYAAAAAAAAAAAACAAcAAAAAAAAAAAACAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C4" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAADAAAAAAAAAAAAAAADAAEAAAAAAAAAAAADAAIAAAAAAAAAAAADAAMAAAAAAAAAAAADAAQAAAAAAAAAAAADAAUAAAAAAAAAAAADAAYAAAAAAAAAAAADAAcAAAAAAAAAAAADAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C5" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAEAAAAAAAAAAAAAAAEAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAEAAMAAAAAAAAAAAAEAAQAAAAAAAAAAAAEAAUAAAAAAAAAAAAEAAYAAAAAAAAAAAAEAAcAAAAAAAAAAAAEAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C6" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAFAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAIAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAFAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAFAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C7" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAGAAAAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAGAAMAAAAAAAAAAAAGAAQAAAAAAAAAAAAGAAUAAAAAAAAAAAAGAAYAAAAAAAAAAAAGAAcAAAAAAAAAAAAGAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C8" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAHAAAAAAAAAAAAAAAHAAEAAAAAAAAAAAAHAAIAAAAAAAAAAAAHAAMAAAAAAAAAAAAHAAQAAAAAAAAAAAAHAAUAAAAAAAAAAAAHAAYAAAAAAAAAAAAHAAcAAAAAAAAAAAAHAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="C9" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAIAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAIAAIAAAAAAAAAAAAIAAMAAAAAAAAAAAAIAAQAAAAAAAAAAAAIAAUAAAAAAAAAAAAIAAYAAAAAAAAAAAAIAAcAAAAAAAAAAAAIAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BTL" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAAACAAEAAAAAAAAAAAABAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAACAAIAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BTM" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAADAAEAAAAAAAAAAAADAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAAFAAIAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BTR" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAGAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAHAAEAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAIAAIAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BML" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAMAAAAAAAAAAAABAAMAAAAAAAAAAAACAAMAAAAAAAAAAAACAAQAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAABAAUAAAAAAAAAAAACAAUAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BMM" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAADAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAADAAQAAAAAAAAAAAADAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAFAAUAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BMR" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAGAAMAAAAAAAAAAAAHAAMAAAAAAAAAAAAIAAMAAAAAAAAAAAAIAAQAAAAAAAAAAAAHAAQAAAAAAAAAAAAGAAQAAAAAAAAAAAAGAAUAAAAAAAAAAAAHAAUAAAAAAAAAAAAIAAUAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BBL" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAAAAYAAAAAAAAAAAABAAYAAAAAAAAAAAACAAYAAAAAAAAAAAACAAcAAAAAAAAAAAABAAcAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAAgAAAAAAAAAAAABAAgAAAAAAAAAAAACAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BBM" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAADAAYAAAAAAAAAAAAEAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAFAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAADAAcAAAAAAAAAAAADAAgAAAAAAAAAAAAEAAgAAAAAAAAAAAAFAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")
 
 [node name="BBR" type="TileMapLayer" parent="."]
 visible = false
 tile_map_data = PackedByteArray("AAAGAAYAAAAAAAAAAAAHAAYAAAAAAAAAAAAIAAYAAAAAAAAAAAAIAAcAAAAAAAAAAAAHAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAAGAAgAAAAAAAAAAAAHAAgAAAAAAAAAAAAIAAgAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_3rxuq")
+script = ExtResource("4_rmt3x")

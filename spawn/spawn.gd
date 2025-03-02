@@ -15,7 +15,9 @@ func spawn_random_shape() -> Shape:
 	var f: float = randf()
 	var s: int = len(shapes)
 	var i: int = floori(s * f)
-	var shape: Shape = shapes[i].instantiate()
+	var scene: PackedScene = shapes[i]
+	var shape: Shape = scene.instantiate()
+	shape.scene = scene
 	add_child(shape)
 	var r: int = floori(randf() * 3)
 	for t in range(r):

@@ -12,6 +12,8 @@ func on_shape_released(shape: Shape):
 		var i: int = shapes.find(shape)
 		shapes.remove_at(i)
 		call_deferred("all_shapes_droppable")
+	else:
+		shape.position = Vector2.ZERO
 	if n_shapes == 0:
 		spawn_all()
 

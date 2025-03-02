@@ -1,0 +1,2 @@
+class_name BlockSensorLayer
+extends TileMapLayer

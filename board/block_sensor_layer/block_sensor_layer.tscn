@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqmljhwytx5og"]
+
+[ext_resource type="Texture2D" uid="uid://b8cmbs6uj7kws" path="res://board/blob.png" id="1_pspt5"]
+[ext_resource type="Script" path="res://board/block_sensor_layer/block_sensor_layer.gd" id="2_ip0m5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4otj1"]
+texture = ExtResource("1_pspt5")
+texture_region_size = Vector2i(4, 4)
+
+[sub_resource type="TileSet" id="TileSet_n3xex"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_4otj1")
+
+[node name="BlockSensorLayer" type="TileMapLayer"]
+tile_set = SubResource("TileSet_n3xex")
+script = ExtResource("2_ip0m5")

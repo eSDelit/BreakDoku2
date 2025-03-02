@@ -3,7 +3,7 @@ extends Node2D
 
 var blocked: bool = false
 var deblocking: bool = false
-var layers: Array[TileMapLayer] = []
+var layers: Array[BlockSensorLayer] = []
 @onready var block_sprite: Sprite2D = $BlockSprite
 
 func block():
