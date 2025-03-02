@@ -20,4 +20,21 @@ position = Vector2(581, 461)
 [node name="Spawn3" parent="." instance=ExtResource("3_iwn8c")]
 position = Vector2(821, 458)
 
+[node name="LabelScore" type="Label" parent="."]
+offset_left = 804.0
+offset_top = 82.0
+offset_right = 844.0
+offset_bottom = 105.0
+
+[node name="LabelLastScore" type="Label" parent="."]
+offset_left = 803.0
+offset_top = 103.0
+offset_right = 843.0
+offset_bottom = 126.0
+
+[node name="Timer" type="Timer" parent="LabelLastScore"]
+wait_time = 5.186
+one_shot = true
+
 [connection signal="scored" from="Board" to="." method="_on_board_scored"]
+[connection signal="timeout" from="LabelLastScore/Timer" to="." method="_on_timer_timeout"]

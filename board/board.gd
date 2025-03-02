@@ -38,6 +38,12 @@ func emit_score_info():
 	var n_blocked_layers: int = len(blocked_layers)
 	scored.emit(score, n_blocked_layers)
 
+func any_shape_droppable(shapes: Array[Shape]):
+	for shape in shapes:
+		if is_shape_droppable_anywhere(shape):
+			return true
+	return false
+
 func is_shape_droppable_anywhere(shape: Shape) -> bool:
 	var shape_to_check = shape.copy()
 	for cell in get_used_cells():
