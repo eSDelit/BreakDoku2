@@ -7,12 +7,13 @@
 script = ExtResource("1_rkvnr")
 
 [node name="Block" parent="." instance=ExtResource("2_2owgi")]
+position = Vector2(-8, 0)
 
 [node name="Block2" parent="." instance=ExtResource("2_2owgi")]
-position = Vector2(-16, 0)
+position = Vector2(-24, 0)
 
 [node name="Block3" parent="." instance=ExtResource("2_2owgi")]
-position = Vector2(16, 0)
+position = Vector2(8, 0)
 
 [node name="Block4" parent="." instance=ExtResource("2_2owgi")]
-position = Vector2(32, 0)
+position = Vector2(24, 0)

@@ -32,7 +32,6 @@ func _on_board_scored(blocks: int, layers: int) -> void:
 	print(score)
 
 func all_shapes_droppable():
-	print(shapes)
 	for shape in shapes:
 		if shape == null:
 			continue

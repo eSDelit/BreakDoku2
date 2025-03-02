@@ -6,7 +6,7 @@ signal grabbed(pos : Vector2, block : AnimatedSprite2D)
 signal released
 
 var rect = Rect2()
-var grid_pos: Vector2i = Vector2i(0, 0)
+var grid_pos: Vector2 = Vector2(0, 0)
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	_on_frame_changed()

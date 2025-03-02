@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://o514x1bjvh0i"]
+
+[ext_resource type="Script" path="res://board/block_sensor.gd" id="1_3bvua"]
+[ext_resource type="Texture2D" uid="uid://dd3st7j1lyqmx" path="res://shapes/block/block_32.png" id="2_g5616"]
+
+[node name="BlockSensor" type="Node2D"]
+visible = false
+script = ExtResource("1_3bvua")
+
+[node name="BlockSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_g5616")

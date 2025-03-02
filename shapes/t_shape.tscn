@@ -7,12 +7,13 @@
 script = ExtResource("1_iul2n")
 
 [node name="Block" parent="." instance=ExtResource("2_8ym8j")]
+position = Vector2(0, -8)
 
 [node name="Block2" parent="." instance=ExtResource("2_8ym8j")]
-position = Vector2(0, 16)
+position = Vector2(0, 8)
 
 [node name="Block4" parent="." instance=ExtResource("2_8ym8j")]
-position = Vector2(-16, 0)
+position = Vector2(-16, -8)
 
 [node name="Block5" parent="." instance=ExtResource("2_8ym8j")]
-position = Vector2(16, 0)
+position = Vector2(16, -8)
